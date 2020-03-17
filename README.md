@@ -368,4 +368,6 @@ ___
 
 ## Help us
 
+restart: always
+
 Any thought, feedback or (hopefully not!)
