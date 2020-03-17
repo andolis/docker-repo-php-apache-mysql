@@ -30,7 +30,7 @@ services:
         command: install
     mysqldb:
         image: mysql:${MYSQL_VERSION}
-        container_name: ${MYSQL_HOST}
+        container_name: ${MYSQL_NAME}
         restart: ${DO_RESTART}
         env_file:
             - ".env"
