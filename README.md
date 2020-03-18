@@ -371,4 +371,13 @@ ___
 restart: always
 laravel mysql connect local ip or general ip
 
+    python:
+        build:
+            context: './etc/python/'
+            args:
+                PYTHON_VERSION: ${PYTHON_VERSION}
+                PYTHON_NAME: ${PYTHON_NAME}
+        ports:
+            - "${PYTHON_PORT}:5000"
+
 Any thought, feedback or (hopefully not!)
