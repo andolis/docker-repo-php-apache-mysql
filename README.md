@@ -369,5 +369,6 @@ ___
 ## Help us
 
 restart: always
+laravel mysql connect local ip or general ip
 
 Any thought, feedback or (hopefully not!)

@@ -42,6 +42,7 @@ services:
             - "${MYSQL_PORT}:3306"
         volumes:
             - "./data/db/mysql:/var/lib/mysql"
+            - "./etc/mysql/mycustom.cnf:/etc/mysql/conf.d/custom.cnf"
     my_project_memcached:
         image: memcached:latest
         entrypoint:
