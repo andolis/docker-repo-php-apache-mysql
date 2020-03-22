@@ -368,6 +368,7 @@ ___
 
 ## Help us
 
+setenforce 0
 docker-compose exec php php artisan migrate
 
 restart: always
