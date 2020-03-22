@@ -368,11 +368,13 @@ ___
 
 ## Help us
 
-setenforce 0
-docker-compose exec php php artisan migrate
+- setenforce 0
+- docker-compose exec php php artisan migrate
+- chmod -R 777 /home/laravel_serp_checking/web/storage
+- chmod -R 777 /home/laravel_serp_checking/web/bootstrap
 
-restart: always
-laravel mysql connect local ip or general ip
+- restart: always
+- laravel mysql connect local ip or general ip
 
     python:
         build:
