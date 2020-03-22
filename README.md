@@ -368,6 +368,8 @@ ___
 
 ## Help us
 
+docker-compose exec php php artisan migrate
+
 restart: always
 laravel mysql connect local ip or general ip
 
