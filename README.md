@@ -372,7 +372,10 @@ ___
 - docker-compose exec php php artisan migrate
 - chmod -R 777 /home/laravel_serp_checking/web/storage
 - chmod -R 777 /home/laravel_serp_checking/web/bootstrap
+
 - docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
+- mysql -u root -p pass
+- grant all privileges on *.* to 'root'@'IPAddress';
 
 - restart: always
 - laravel mysql connect local ip or general ip
