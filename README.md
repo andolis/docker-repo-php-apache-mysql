@@ -374,6 +374,7 @@ ___
 - chmod -R 777 /home/laravel_serp_checking/web/bootstrap
 
 - docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
+- docker exec -it mysql bash
 - mysql -u root -p pass
 - grant all privileges on *.* to 'root'@'IPAddress';
 
